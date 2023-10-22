@@ -1,0 +1,189 @@
+<html>
+  <head>
+    <title>Calculator</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        font-family: sans- serif;
+        background: linear-gradient(to left, #69db7c, #d3f9d8);
+      }
+      .calci {
+        width: 500px;
+        padding: 100px 100px 100px 100px;
+        position: absolute;
+        top: 50%;
+        left: 60%;
+        text-align: centre;
+        transform: translate(-50%, -50%);
+      }
+      #display {
+        width: 240px;
+        border-radius: 30px;
+        font-size: 30px;
+        font-weight: 300px;
+      }
+      .btn-design {
+        width: 50px;
+        height: 50px;
+        border-radius: 30px;
+        padding-top: -1;
+        margin: 5.5px;
+        border: none;
+      }
+
+      .optr-design {
+        width: 50px;
+        height: 50px;
+        border-radius: 30px;
+        padding-top: -1;
+        margin: 5.5px;
+        border: none;
+        cursor: pointer;
+        border: none;
+      }
+      .optr-design:hover {
+        background: green;
+      }
+      #zero {
+        width: 95px;
+        height: 50px;
+        border-radius: 30px;
+        border: none;
+      }
+      h1 {
+        font-size: 50px;
+        margin-top: 30px;
+        margin-left: 100px;
+        text-transform: uppercase;
+        text-decoration:none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Calculator</h1>
+  </body>
+  <form action="finalCalculator.html" name="form_1" class="calci">
+    <input type="text" id="display" name="answer" />
+    <br />
+    <input
+      type="button"
+      class="btn-design"
+      value="C"
+      onclick="form_1.answer.value  = ' ' "
+    />
+    <input
+      type="button"
+      class="btn-design"
+      value="<"
+      onclick="form_1.answer.value= form_1.answer.value.substring(0, form_1.answer.value.length*1-1)"
+    />
+    <input
+      type="button"
+      class="btn-design"
+      value="00"
+      onclick="form_1.answer.value += '00' "
+    />
+    <input
+      type="button"
+      class="optr-design"
+      value="/"
+      onclick="form_1.answer.value += '/' "
+    />
+    <br />
+    <input
+      type="button"
+      class="btn-design"
+      value="7"
+      onclick="form_1.answer.value += '7' "
+    />
+    <input
+      type="button"
+      class="btn-design"
+      value="8"
+      onclick="form_1.answer.value += '8' "
+    />
+    <input
+      type="button"
+      class="btn-design"
+      value="9"
+      onclick="form_1.answer.value += '9' "
+    />
+    <input
+      type="button"
+      class="optr-design"
+      value="*"
+      onclick="form_1.answer.value += '*' "
+    />
+    <br />
+    <input
+      type="button"
+      class="btn-design"
+      value="4"
+      onclick="form_1.answer.value += '4' "
+    />
+    <input
+      type="button"
+      class="btn-design"
+      value="5"
+      onclick="form_1.answer.value += '5' "
+    />
+    <input
+      type="button"
+      class="btn-design"
+      value="6"
+      onclick="form_1.answer.value += '6' "
+    />
+    <input
+      type="button"
+      class="optr-design"
+      value="-"
+      onclick="form_1.answer.value += '-' "
+    />
+    <br />
+    <input
+      type="button"
+      class="btn-design"
+      value="3"
+      onclick="form_1.answer.value += '3'"
+    />
+    <input
+      type="button"
+      class="btn-design"
+      value="2"
+      onclick="form_1.answer.value += '2' "
+    />
+    <input
+      type="button"
+      class="btn-design"
+      value="1"
+      onclick="form_1.answer.value += '1' "
+    />
+    <input
+      type="button"
+      class="optr-design"
+      value="+"
+      onclick="form_1.answer.value += '+' "
+    />
+    <br />
+    <input
+      type="button"
+      id="zero"
+      value="0"
+      onclick="form_1.answer.value += '0' "
+    />
+    <input
+      type="button"
+      class="btn-design"
+      value="."
+      onclick="form_1.answer.value += '.' "
+    />
+    <input
+      type="button"
+      class="optr-design"
+      value="="
+      onclick="form_1.answer.value= eval(form_1.answer.value)"
+    />
+    <br />
+  </form>
+</html>
