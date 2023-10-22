@@ -12,6 +12,6 @@ This repository consist of all different task and their solution given in level 
 
 See it live here:-
 
-- [Landing-page](https://codesoft-landingpage.netlify.app/)
-- [Portfolio](https://codesoft-portfolio-faraz.netlify.app/)
-- [Calculator](https://codesoft-calculator-faraz.netlify.app/)
+- [Landing-page](https://codsoft-landingpage-faraz.netlify.app/)
+- [Portfolio](https://codsoft-portfolio-faraz.netlify.app/)
+- [Calculator](https://codsoft-calculator-faraz.netlify.app/)
